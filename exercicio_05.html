@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>Diferença de dois valores função SE</h1> 
+   <div id="diferenca"></div>
+   <script>
+        let valor1 = Number(prompt("Digite o primeiro valor"));
+        let valor2 = Number(prompt("Digite  o Segundo valor"));
+        let resul1;
+        let diferenca;
+
+         if(valor1 > valor2){
+            resul1 = "A diferença entre " + valor1 + " e " + valor2 + " é: ";
+            diferenca = (valor1 - valor2);
+         }else{
+            resul1 = "A diferença entre " + valor2 + " e " + valor1+" é: ";
+            diferenca = (valor2 - valor1);
+         }
+
+            document.getElementById("diferenca").innerHTML = resul1 + diferenca
+   </script>
+</body>
+</html>
